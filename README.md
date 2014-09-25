@@ -1,7 +1,7 @@
 #Ember Cheat Sheet
 
-(Guide)[http://emberjs.com/guides/getting-started/]
-(Another Cheat Sheet)[http://embersherpa.com/]
+[Guide](http://emberjs.com/guides/getting-started/)
+[Another Cheat Sheet](http://embersherpa.com/)
 
 ##Summary
 
@@ -41,7 +41,7 @@ what template goes with what controller.
 
 ##Conventions
 
-### (Adapters and Serializers)[http://emberjs.com/guides/models/the-rest-adapter/]
+### [Adapters and Serializers](http://emberjs.com/guides/models/the-rest-adapter/)
 
 There are adapters that are used to connect to backends are whatever.
 There is a localstorage adapter, one for certain backends like rest apis.
@@ -51,7 +51,7 @@ record being returned needs to be in the root. For using Rails and AMS,
 use the ActiveModelAdapter, it expects ids to be embedded and records
 to be included/side loaded.
 
-### (Models)[http://emberjs.com/guides/models/]
+### [Models](http://emberjs.com/guides/models/)
 
 ```javascript
 
@@ -87,7 +87,7 @@ App.PostRoute = Ember.Route.extend({
 
 ```
 
-### (Routing and Routes)[http://emberjs.com/guides/routing/]
+### [Routing and Routes](http://emberjs.com/guides/routing/)
 
 Models become resources and actions for the models are nested under in routes.
 Here is an example of routing with dynamic segments.
@@ -138,7 +138,7 @@ routes index is the base route for any level of in the hierarchy.
 
 Also remember the route sets up the controller. Put setup information here.
 
-### (Controllers)[http://emberjs.com/guides/controllers/]
+### [Controllers](http://emberjs.com/guides/controllers/)
 
 Any actions that happen in the template need to be defined here.
 The controller is the templates gateway to the model. Object controller
@@ -161,7 +161,7 @@ App.SongsController = Ember.ArrayController.extend({
 });
 ```
 
-### (Templates)[http://emberjs.com/guides/templates/the-application-template/]
+### [Templates](http://emberjs.com/guides/templates/the-application-template/)
 
 Templates are in HTML and handlebars.
 
@@ -196,16 +196,16 @@ Templates are in HTML and handlebars.
 
 Remember to write helpers for complicated handlebars.
 
-### (Views)[http://emberjs.com/guides/views/]
+### [Views](http://emberjs.com/guides/views/)
 
 When you need sophisticated event handling, write and use a view.
 
-### (Components)[http://emberjs.com/guides/components/]
+### [Components](http://emberjs.com/guides/components/)
 
 Create custom tags with javascript backed behavior. Feels a lot like
 directives in angular, kinda. Makes certain things more modular and
 reusable between apps.
 
-### (Testing)[http://emberjs.com/guides/testing/]
+### [Testing](http://emberjs.com/guides/testing/)
 
 Write automated integration and unit tests.
