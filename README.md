@@ -40,6 +40,9 @@ to test at each stage of development. There is a strict naming convention that
 should be followed unless you want to diverge and explicitly tell ember
 what template goes with what controller.
 
+Be sure to use the ember debugger for chrome to check the state of your
+app. Log transitions etc etc for constant feedback from your app.
+
 ##Conventions
 
 ### [Adapters and Serializers](http://emberjs.com/guides/models/the-rest-adapter/)
@@ -160,6 +163,22 @@ App.SongsController = Ember.ArrayController.extend({
     return longSongs.get('length');
   }.property('@each.duration')
 });
+```
+Also remember computer properties etc etc, need to be set so 
+Ember knows to watch for them. And when changing model properties
+remember to use the get and set methods provided by Ember so it can
+update the views. Dont forget about filters either. 
+
+If a controller needs to use another model elsewhere do this.
+
+```javascript
+
+App.AnotherController = Ember.Controller.extend({
+  needs: ['post', 'comments']
+  //And this if you dont want to prefice the use of post in the template
+  post: Ember.computed.alias("controllers.post")
+});
+
 ```
 
 ### [Templates](http://emberjs.com/guides/templates/the-application-template/)
