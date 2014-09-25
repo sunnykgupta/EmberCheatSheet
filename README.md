@@ -1,6 +1,7 @@
 #Ember Cheat Sheet
 
 [Guide](http://emberjs.com/guides/getting-started/)
+
 [Another Cheat Sheet](http://embersherpa.com/)
 
 ##Summary
