@@ -13,6 +13,7 @@ It works off of nested routes and ties in the model. It reminds me of Rails in
 the way it handles template and route nesting and it's other various
 opinionated ways. Think matryoshka dolls! I want Ember to be my predominant
 MVC choice for web app development. It works well with the Yeoman generator.
+Run grunt to build and compilte, grunt serve to look at on localhost.
 
 ##Overview
 
