@@ -35,4 +35,19 @@ to test at each stage of development. There is a strict naming convention that
 should be followed unless you want to diverge and explicitly tell ember
 what template goes with what controller.
 
-##Most used
+##Conventions
+
+###Models
+
+###Routing
+
+###Routes
+
+###Controller
+
+###Templates
+
+###View
+
+##Tips
+
